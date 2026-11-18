@@ -1,0 +1,8 @@
+{
+  "source": "User AS2 manual screenshots, 2026-10-12",
+  "hardware_confirmed": {"type": "single optical color camera", "resolution": [1920,1080], "frequency_hz":15,"output_bits":8,"horizontal_fov_deg":135,"vertical_fov_deg":89,"f_number":2.4,"focal_length_mm":1.5,"focus_distance_m":0.5,"depth_output_confirmed":false},
+  "cad_frame_base_translation_m":[0.260949879,0.058425665,0.083565534],
+  "cad_frame_rpy_radians":[0.0,1.466076552,3.141592654],
+  "simulation_approximation":{"resolution":[640,360],"model":"pinhole, square pixels","horizontal_fov_deg":135,"vertical_fov_deg":107.265648589951,"depth":"renderer ground truth, not real sensor capability","cad_to_optical":"right=CAD Y, up=-CAD X, forward=-CAD Z; inferred","manual_base_equals_urdf_base_link":"assumed, not independently calibrated"},
+  "missing":["intrinsic matrix", "distortion model and coefficients", "confirmation of CAD-to-optical frame convention"]
+}

@@ -1,0 +1,196 @@
+{
+  "measured_bed_widths_m": [
+    0.8,
+    0.65,
+    0.65,
+    0.6,
+    0.6
+  ],
+  "measured_internal_aisle_widths_m": [
+    0.65,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "bed_centers_y": [
+    3.6,
+    2.225,
+    1.025,
+    -0.2,
+    -1.45
+  ],
+  "presentation_inner_width_m": 6.85,
+  "route_start": [
+    -3.0,
+    -0.825
+  ],
+  "route_end": [
+    5.6,
+    -1.7
+  ],
+  "mode": "selected aisle serpentine then bottom headland to aisle2 and home; no A*",
+  "provisional": [
+    "overall greenhouse width relaxed for presentation",
+    "manifold diameter",
+    "plant heights/mount",
+    "pipe band longitudinal position centered at X=0",
+    "compact right/left outer margins 0.30m/0.80m selected for the navigation presentation"
+  ],
+  "irrigation_links_x": [
+    -20.49,
+    20.49
+  ],
+  "end_bays_x": [
+    [
+      -24.05,
+      -20.45
+    ],
+    [
+      20.45,
+      24.05
+    ]
+  ],
+  "turn_center": [
+    5.6,
+    -1.7
+  ],
+  "entry_view": "look along +X: strawberry left, tall tomatoes right",
+  "bed_rectangles_xy_m": [
+    [
+      -20.45,
+      20.45,
+      3.2,
+      4.0
+    ],
+    [
+      -20.45,
+      20.45,
+      1.9000000000000001,
+      2.5500000000000003
+    ],
+    [
+      -20.45,
+      20.45,
+      0.7,
+      1.3499999999999999
+    ],
+    [
+      -20.45,
+      20.45,
+      -0.5,
+      0.09999999999999998
+    ],
+    [
+      -20.45,
+      20.45,
+      -1.75,
+      -1.15
+    ]
+  ],
+  "assigned_turn_bay_xy": [
+    4.7,
+    6.8,
+    -2.8,
+    -0.65
+  ],
+  "outer_bounds_xy": [
+    -24.05,
+    24.05,
+    -2.05,
+    4.8
+  ],
+  "photo_inference": [
+    "row1 strawberry",
+    "row2/3 leafy vegetables",
+    "row4/5 trellised tomato"
+  ],
+  "roof_frame_visible": false,
+  "survey_revision": "user photo + clarification 2026-11-01",
+  "measured_pipe_band_width_m": 0.9,
+  "pipe_zones_xy_m": [
+    [
+      -0.45,
+      0.45,
+      3.2,
+      4.0
+    ],
+    [
+      -0.45,
+      0.45,
+      1.9000000000000001,
+      2.5500000000000003
+    ],
+    [
+      -0.45,
+      0.45,
+      0.7,
+      1.3499999999999999
+    ],
+    [
+      -0.45,
+      0.45,
+      -0.5,
+      0.09999999999999998
+    ],
+    [
+      -0.45,
+      0.45,
+      -1.75,
+      -1.15
+    ]
+  ],
+  "crop_sections_x_m": [
+    [
+      -20.45,
+      -0.45
+    ],
+    [
+      0.45,
+      20.45
+    ]
+  ],
+  "pipe_band_crosses_longitudinal_aisles": false,
+  "measured_right_outer_aisle_width_m": 0.3,
+  "outer_margins_m": {
+    "right_assigned_from_description": 0.3,
+    "left_remainder": 0.8
+  },
+  "assumed_pipe_band_center_x_m": 0.0,
+  "dense_canopy": {
+    "plants": 660,
+    "leaves": 21720,
+    "leaves_per_original": 2,
+    "minimum_bed_inset_m": 0.02499999999999858,
+    "same_mesh_for_render_lidar_collision": true
+  },
+  "crop_geometry": {
+    "policy": "dense layered leaves constrained inside measured beds and crop sections",
+    "leaf_horizontal_scale_about_attachment": 0.8,
+    "leaf_height_unchanged": true,
+    "stems_and_beds_unchanged": true,
+    "same_geometry_for_camera_lidar_and_collision": true
+  },
+  "leaf_contact_model": {
+    "type": "bounded light-contact approximation; no calibrated elasticity",
+    "leaf_colliders": 660,
+    "rigid_stem_colliders": 312,
+    "foot_colliders": 4,
+    "soft_contact_body_colliders": 50,
+    "camera_and_lidar_leaves_retained": true,
+    "foot_leaf_and_all_stem_bed_collisions_retained": true
+  },
+  "terrain": {
+    "profile": "flat",
+    "source": "UNCHANGED_FLAT_GROUND_BASELINE"
+  },
+  "selected_aisles_from_right": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "excluded_aisles_from_right": [
+    1,
+    6
+  ]
+}

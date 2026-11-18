@@ -1,0 +1,57 @@
+{
+  "forbidden_contact": null,
+  "pairs": {
+    "/World/AS2/Geometry/world/base_link/RR_hip/RR_thigh/RR_calf/RR_foot/sphere | /World/Floor": {
+      "count": 271185,
+      "first_t": 3.008333444595337,
+      "last_t": 1502.0041667771086,
+      "max_impulse": 0.8469852209091187,
+      "min_separation": -0.00020316801965236664,
+      "last_position": [
+        -3.204982042312622,
+        -0.9657344818115234,
+        0.0
+      ]
+    },
+    "/World/AS2/Geometry/world/base_link/RL_hip/RL_thigh/RL_calf/RL_foot/sphere | /World/Floor": {
+      "count": 270884,
+      "first_t": 3.008333444595337,
+      "last_t": 1502.0041667771086,
+      "max_impulse": 1.4770426750183105,
+      "min_separation": -0.0014529619365930557,
+      "last_position": [
+        -3.2118136882781982,
+        -0.6854541301727295,
+        0.0
+      ]
+    },
+    "/World/AS2/Geometry/world/base_link/FR_hip/FR_thigh/FR_calf/FR_foot/sphere | /World/Floor": {
+      "count": 271281,
+      "first_t": 3.008333444595337,
+      "last_t": 1502.0041667771086,
+      "max_impulse": 1.694023847579956,
+      "min_separation": -0.000591672956943512,
+      "last_position": [
+        -2.7877562046051025,
+        -0.9624514579772949,
+        0.0
+      ]
+    },
+    "/World/AS2/Geometry/world/base_link/FL_hip/FL_thigh/FL_calf/FL_foot/sphere | /World/Floor": {
+      "count": 270654,
+      "first_t": 3.008333444595337,
+      "last_t": 1502.0041667771086,
+      "max_impulse": 0.9454445838928223,
+      "min_separation": -0.0016953740268945694,
+      "last_position": [
+        -2.781635046005249,
+        -0.6826705932617188,
+        0.0
+      ]
+    }
+  },
+  "foot_ground_contact_samples": 1042410,
+  "modeled_sole_radius_m": 0.028,
+  "minimum_measured_toe_clearance_m": 0.07023038578033461,
+  "scope": "Rigid stems/beds/structures and foot contacts on flat or synthetic terrain; body-leaf light contacts are filtered by explicit scene model"
+}

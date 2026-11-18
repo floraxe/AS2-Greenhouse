@@ -1,0 +1,27 @@
+{
+  "baseline": "four-aisle-current",
+  "created": "2026-11-18",
+  "scope": "fixed flat greenhouse, known initial pose, aisles 2-5, online RGB+LiDAR SLAM",
+  "runs": [
+    {
+      "folder": "outputs/four_aisle_slam_20261116_180100",
+      "database": "greenhouse_fusion_20261116_050407.db",
+      "database_sha256": "bc4de43614f8c651a32eb54f6a7de0985b62e1254382c847a5ea071bb458895d",
+      "acceptance_sha256": "d006c01962618c63c425015d8dde7d9dc00fb7f66247a4bc517a93c8a3d98744"
+    },
+    {
+      "folder": "outputs/four_aisle_slam_20261116_194958",
+      "database": "greenhouse_fusion_20261116_065034.db",
+      "database_sha256": "e229b634fe4c3df5b59475ea8e43fd11c929cf70c4662e0067939056ba678a72",
+      "acceptance_sha256": "ffdda9e1633bb543b4c2d3da55800f4a2f99b88b08598e6c079a609751b268f0"
+    }
+  ],
+  "hardware_capture": {
+    "path": "field_data/indoor_20261117/runs/indoor-20261117-032609-8Iek/bag/bag_0.db3",
+    "sha256": "dc7903fa0dadda392e9255a0f39d3c10462e118b089aee968e1cc1243ceb04b9",
+    "status": "static sensor capture only; not an autonomous patrol acceptance run"
+  },
+  "source_archive": "baselines/four-aisle-current/source.zip",
+  "source_archive_sha256": "6ebda83e3b115845e8937c0be07d6cc57fae2d7c7d37e00dbe1d720091ac94b3"
+}
+

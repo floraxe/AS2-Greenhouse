@@ -1,0 +1,11 @@
+{
+  "generated": "2026-11-18",
+  "scope": "current release work/*.py only",
+  "python_files": 46,
+  "physical_lines": 4672,
+  "nonblank_lines": 4421,
+  "notes": [
+    "Counts exclude ROS, RTAB-Map, Isaac Sim, third-party model assets, generated files and historical experiments.",
+    "The retained hardware bag and launch/configuration files are not included in the Python line count."
+  ]
+}

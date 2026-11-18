@@ -1,0 +1,14 @@
+{
+  "method": "PRE_SENSOR_STANDING_PLACEMENT",
+  "warmup_steps": 720,
+  "sensor_start_time_s": 3.008333444595337,
+  "declared_position": [
+    -3.0,
+    -0.825,
+    0.296
+  ],
+  "measured_terrain_height_m": 0.0,
+  "declared_yaw_rad": 0.0,
+  "navigation_truth_feedback": false,
+  "placement_before_sensor_publication": true
+}

@@ -1,0 +1,405 @@
+{
+  "bag": "E:\\AS2_Greenhouse\\field_data\\indoor_20261117\\runs\\indoor-20261117-032609-8Iek\\bag\\bag_0.db3",
+  "size_bytes": 691601408,
+  "topics": {
+    "/utlidar/imu_livox_mid360": {
+      "type": "sensor_msgs/msg/Imu",
+      "messages": 5326,
+      "receive_timing": {
+        "first_ns": 1794903981523042726,
+        "last_ns": 1794904013076711023,
+        "interval_s": {
+          "count": 5325,
+          "minimum": 2.082e-06,
+          "median": 0.004385279,
+          "mean": 0.005925571511173708,
+          "p95": 0.034842774400000005,
+          "maximum": 1.100647107
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 168.76009311748646
+      },
+      "sample_timing": {
+        "first_ns": 926166239000,
+        "last_ns": 956786906000,
+        "interval_s": {
+          "count": 5325,
+          "minimum": 0.004831,
+          "median": 0.005058,
+          "mean": 0.00575036,
+          "p95": 0.005116,
+          "maximum": 0.360044
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 173.90215569112195
+      },
+      "frames": [
+        "hesai_lidar"
+      ],
+      "receive_minus_header_s": {
+        "count": 5326,
+        "minimum": 1794903055.3523667,
+        "median": 1794903055.355053,
+        "mean": 1794903055.4021862,
+        "p95": 1794903055.4190493,
+        "maximum": 1794903056.67548
+      },
+      "unparsed_trailing_bytes": {
+        "count": 5326,
+        "minimum": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "schema_size_matches": true
+    },
+    "/utlidar/cloud_livox_mid360": {
+      "type": "sensor_msgs/msg/PointCloud2",
+      "messages": 245,
+      "receive_timing": {
+        "first_ns": 1794903981585483957,
+        "last_ns": 1794904007689668336,
+        "interval_s": {
+          "count": 244,
+          "minimum": 0.045990957,
+          "median": 0.10015859199999999,
+          "mean": 0.10698436220901639,
+          "p95": 0.1165656736,
+          "maximum": 1.055050501
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 9.347160457397411
+      },
+      "sample_timing": {
+        "first_ns": 926100315000,
+        "last_ns": 952200178000,
+        "interval_s": {
+          "count": 244,
+          "minimum": 0.099807,
+          "median": 0.1000625,
+          "mean": 0.10696665163934425,
+          "p95": 0.10015455,
+          "maximum": 1.000022
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 9.348708075594114
+      },
+      "frames": [
+        "hesai_lidar"
+      ],
+      "receive_minus_header_s": {
+        "count": 245,
+        "minimum": 1794903055.481729,
+        "median": 1794903055.4883087,
+        "mean": 1794903055.488892,
+        "p95": 1794903055.5001693,
+        "maximum": 1794903055.5384715
+      },
+      "unparsed_trailing_bytes": {
+        "count": 245,
+        "minimum": 1.0,
+        "median": 1.0,
+        "mean": 1.9877551020408164,
+        "p95": 3.0,
+        "maximum": 3.0
+      },
+      "schema_size_matches": true,
+      "layout": {
+        "width": 106810,
+        "height": 1,
+        "point_step": 26,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8
+          }
+        ]
+      }
+    },
+    "/lf/sportmodestate": {
+      "type": "unitree_go/msg/SportModeState",
+      "messages": 535,
+      "receive_timing": {
+        "first_ns": 1794903981538718846,
+        "last_ns": 1794904013076746328,
+        "interval_s": {
+          "count": 534,
+          "minimum": 8.716e-06,
+          "median": 0.050013841,
+          "mean": 0.05905997655805244,
+          "p95": 0.052248288149999995,
+          "maximum": 1.215777946
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 16.93194034740362
+      },
+      "sample_timing": {
+        "first_ns": 0,
+        "last_ns": 0,
+        "interval_s": {
+          "count": 534,
+          "minimum": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "maximum": 0.0
+        },
+        "non_increasing": 534,
+        "span_rate_hz": null
+      },
+      "frames": [],
+      "receive_minus_header_s": null,
+      "unparsed_trailing_bytes": {
+        "count": 535,
+        "minimum": 280.0,
+        "median": 280.0,
+        "mean": 280.0,
+        "p95": 280.0,
+        "maximum": 280.0
+      },
+      "schema_size_matches": false
+    },
+    "/frontvideostream": {
+      "type": "unitree_go/msg/Go2FrontVideoData",
+      "messages": 802,
+      "receive_timing": {
+        "first_ns": 1794903981554160055,
+        "last_ns": 1794904013056980107,
+        "interval_s": {
+          "count": 801,
+          "minimum": 2.773e-06,
+          "median": 0.006562441,
+          "mean": 0.039329363360799,
+          "p95": 0.068290345,
+          "maximum": 1.215915973
+        },
+        "non_increasing": 0,
+        "span_rate_hz": 25.426295127795946
+      },
+      "sample_timing": null,
+      "frames": [],
+      "receive_minus_header_s": null,
+      "unparsed_trailing_bytes": null,
+      "schema_size_matches": false,
+      "decode_note": "Inferred Q timestamp + I resolution + byte sequence; all packet lengths verified; differs from bundled .msg"
+    }
+  },
+  "sha256": "dc7903fa0dadda392e9255a0f39d3c10462e118b089aee968e1cc1243ceb04b9",
+  "sqlite_integrity": "ok",
+  "imu_acceleration_mps2": {
+    "axis_mean": [
+      -1.0452905804512196,
+      9.599133357454074,
+      -1.219015970727827
+    ],
+    "axis_std": [
+      0.020042160575553386,
+      0.03450016981076432,
+      0.011776666787747973
+    ],
+    "norm": {
+      "count": 5326,
+      "minimum": 9.606782238301552,
+      "median": 9.73246504893563,
+      "mean": 9.732546072448661,
+      "p95": 9.791553991919965,
+      "maximum": 9.88441687725115
+    }
+  },
+  "imu_angular_velocity_rps": {
+    "axis_mean": [
+      0.0011988881930732579,
+      0.0005912010532889729,
+      0.0018189648766479573
+    ],
+    "axis_std": [
+      0.0011421451796176873,
+      0.0010111014038023663,
+      0.0010084261658209466
+    ],
+    "norm": {
+      "count": 5326,
+      "minimum": 0.0,
+      "median": 0.0028657202391677164,
+      "mean": 0.0027200472560295784,
+      "p95": 0.004452293768548751,
+      "maximum": 0.007019552331527478
+    }
+  },
+  "sport_position_m": {
+    "axis_mean": [
+      0.02059328928589821,
+      -0.0073707750998437405,
+      0.3132176995277405
+    ],
+    "axis_std": [
+      0.00015523731417488307,
+      0.00016016243898775429,
+      6.459868927777279e-06
+    ],
+    "norm": {
+      "count": 535,
+      "minimum": 0.3139616847038269,
+      "median": 0.3139820396900177,
+      "mean": 0.3139808589052931,
+      "p95": 0.3139884531497955,
+      "maximum": 0.3139924705028534
+    }
+  },
+  "sport_velocity_mps": {
+    "axis_mean": [
+      0.0019277450628578663,
+      -0.0023925593122839928,
+      0.00010227347229374573
+    ],
+    "axis_std": [
+      0.0012190361740067601,
+      0.0013045043451711535,
+      0.0003387838660273701
+    ],
+    "norm": {
+      "count": 535,
+      "minimum": 0.0003470786032266915,
+      "median": 0.0033559268340468407,
+      "mean": 0.0033917233493139915,
+      "p95": 0.005193663388490675,
+      "maximum": 0.007475619204342365
+    }
+  },
+  "sport_imu_acceleration_mps2": {
+    "axis_mean": [
+      -0.09004439413547516,
+      -0.11718391627073288,
+      9.882421493530273
+    ],
+    "axis_std": [
+      0.03561767563223839,
+      0.0353599488735199,
+      0.09098201990127563
+    ],
+    "norm": {
+      "count": 535,
+      "minimum": 9.622081756591797,
+      "median": 9.888262748718262,
+      "mean": 9.883656302122311,
+      "p95": 10.029250717163086,
+      "maximum": 10.141731262207031
+    }
+  },
+  "sport_displacement_from_first_m": {
+    "count": 535,
+    "minimum": 0.0,
+    "median": 0.0005031816544942558,
+    "mean": 0.0004842322386895626,
+    "p95": 0.000728872907347977,
+    "maximum": 0.0008177188574336469
+  },
+  "point_count_per_scan": {
+    "count": 245,
+    "minimum": 106681.0,
+    "median": 106920.0,
+    "mean": 106884.35102040817,
+    "p95": 107048.8,
+    "maximum": 107116.0
+  },
+  "finite_point_count_per_scan": {
+    "count": 245,
+    "minimum": 106681.0,
+    "median": 106920.0,
+    "mean": 106884.35102040817,
+    "p95": 107048.8,
+    "maximum": 107116.0
+  },
+  "point_xyz_percentiles_1_50_99_first_scan": [
+    [
+      -5.505681691169738,
+      -0.4972418913245201,
+      -0.20313731580972672
+    ],
+    [
+      -0.004167626146227121,
+      0.06307259202003479,
+      1.2116360664367676
+    ],
+    [
+      3.322330377101898,
+      3.954766926765442,
+      6.019244213104253
+    ]
+  ],
+  "video": {
+    "field_sizes_first": [
+      [
+        8331,
+        720
+      ],
+      [
+        1358,
+        360
+      ],
+      [
+        8571,
+        720
+      ],
+      [
+        2090,
+        360
+      ],
+      [
+        8405,
+        720
+      ]
+    ],
+    "time_frame_first": [
+      89362015,
+      89362015,
+      89368690,
+      89368690,
+      89375337
+    ],
+    "time_frame_difference": {
+      "count": 801,
+      "minimum": 0.0,
+      "median": 0.0,
+      "mean": 3803.558052434457,
+      "p95": 6690.0,
+      "maximum": 120004.0
+    },
+    "output": "E:\\AS2_Greenhouse\\field_data\\indoor_20261117\\runs\\indoor-20261117-032609-8Iek\\analysis\\frontvideo720.bin",
+    "first_bytes": "0000000141e002a005425f968efaaed6b8d1ed7bbb61bada5a9bb920b85bc08f"
+  },
+  "limitations": [
+    "SportModeState has 280 unparsed trailing bytes. Only bundled-layout prefix decoded provisionally; confirm firmware-matched .msg before trusting state fields.",
+    "Video layout inferred from all 802 packet lengths: uint64 time, uint32 resolution, byte sequence. Both 720 and 360 streams present. Packet count is not decoded frame count.",
+    "Point cloud and IMU headers use sensor-relative seconds; bag uses host epoch seconds. Difference is a clock-origin offset, not measured network latency.",
+    "Video timestamps need separate clock mapping. RGB-lidar extrinsics and camera calibration are not validated.",
+    "Intervals up to 1.000022s in cloud headers and 0.360044s in IMU headers require investigation before online SLAM."
+  ]
+}

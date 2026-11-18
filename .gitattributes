@@ -1,0 +1,10 @@
+*.db filter=lfs diff=lfs merge=lfs -text
+*.db3 filter=lfs diff=lfs merge=lfs -text
+*.usda filter=lfs diff=lfs merge=lfs -text
+*.usd filter=lfs diff=lfs merge=lfs -text
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+outputs/**/场景静止轨迹.json filter=lfs diff=lfs merge=lfs -text
+outputs/**/trajectory_checkpoint.json filter=lfs diff=lfs merge=lfs -text

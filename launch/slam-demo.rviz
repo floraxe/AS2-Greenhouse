@@ -1,0 +1,71 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 40; 40; 40
+    Fixed Frame: map
+    Frame Rate: 15
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: Online occupancy map
+      Enabled: true
+      Alpha: 1
+      Color Scheme: map
+      Draw Behind: false
+      Topic:
+        Value: /as2/slam/map
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/Axes
+      Name: Robot position
+      Enabled: true
+      Reference Frame: base_stabilized
+      Length: 0.8
+      Radius: 0.08
+    - Class: rviz_default_plugins/Odometry
+      Name: Recent estimated odometry
+      Enabled: true
+      Keep: 100
+      Position Tolerance: 0.2
+      Angle Tolerance: 0.1
+      Topic:
+        Value: /as2/odom
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 10
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Current laser scan
+      Enabled: false
+      Size (m): 0.025
+      Style: Points
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Topic:
+        Value: /as2/lidar/points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Target Frame: map
+      Scale: 15
+      X: 0
+      Y: 0
+      Angle: 0
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+  Enabled: true
+Window Geometry:
+  Width: 960
+  Height: 720

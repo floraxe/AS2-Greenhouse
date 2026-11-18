@@ -1,0 +1,41 @@
+[package]
+title = "AS2 ROS Sensors"
+version = "1.0.0"
+description = "Small project-specific sensor runtime; no motion planning or learning extensions"
+[dependencies]
+"isaacsim.simulation_app" = {}
+
+"isaacsim.core.experimental.prims" = {}
+"isaacsim.core.simulation_manager" = {}
+"isaacsim.sensors.experimental.physics" = {}
+"isaacsim.robot.schema" = {}
+"omni.replicator.core" = {}
+"omni.kit.loop-isaac" = {}
+"omni.kit.viewport.window" = {}
+"omni.kit.viewport.utility" = {}
+"omni.kit.renderer.core" = {}
+"omni.kit.renderer.init" = {}
+"omni.kit.window.toolbar" = {}
+"omni.usd" = {}
+"omni.physx" = {}
+"omni.pip.compute" = {}
+"omni.isaac.core_archive" = {}
+"omni.hydra.rtx" = {}
+"omni.hydra.engine.stats" = {}
+"omni.hydra.usdrt_delegate" = {}
+"omni.rtx.spg" = {}
+[settings]
+app.settings.fabricDefaultStageFrameHistoryCount = 3
+app.name = "AS2-ROS-Sensors"
+app.version = "1.0"
+app.window.title = "AS2 ROS Sensors"
+app.settings.persistent = false
+app.extensions.registryEnabled = false
+app.vulkan = true
+rtx.rendermode = "RaytracedLighting"
+[settings.app.exts.folders]
+'++' = ["E:/isaacsim/exts", "E:/isaacsim/extscache", "E:/isaacsim/extsDeprecated"]
+
+[settings.app.renderer]
+resolution.width = 1280
+resolution.height = 720

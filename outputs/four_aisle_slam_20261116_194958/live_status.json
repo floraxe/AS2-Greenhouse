@@ -1,0 +1,375 @@
+{
+  "ray_surface_counts": {
+    "foliage": 2741,
+    "stems": 533,
+    "beds": 5048,
+    "other": 8972
+  },
+  "visual_foliage": {
+    "source": "ACTUAL_RGB_GREEN_PROJECTION_AND_MEASURED_LIDAR_MEMORY",
+    "directly_colored_points": 305,
+    "foliage_points": 57447,
+    "points": 147052,
+    "memory_frames": 101
+  },
+  "local_row": {
+    "valid": true,
+    "reason": "MEASURED_ROW_CENTER",
+    "left": {
+      "slope": 0.004495659163980384,
+      "intercept": 0.33852795224026205,
+      "height_gain": 0.4405848483792008,
+      "reference_height_m": 0.05,
+      "center_sigma_m": 0.0002964378803223679,
+      "heading_sigma_deg": 0.0150033231527503,
+      "inliers": 129,
+      "span_m": 3.8390030683284824,
+      "rms_m": 0.0010104987743726676
+    },
+    "right": {
+      "slope": 0.00454475269902567,
+      "intercept": -0.3416262585135635,
+      "height_gain": -0.4273044690972036,
+      "reference_height_m": 0.05,
+      "center_sigma_m": 0.0002972735824389129,
+      "heading_sigma_deg": 0.015055664234361683,
+      "inliers": 131,
+      "span_m": 3.8382434492602115,
+      "rms_m": 0.0009538848260428629
+    },
+    "floor_rms_m": 0.00030849871069279063,
+    "floor_plane": [
+      0.007388442938753793,
+      -0.006805100816697107,
+      -0.2919923972756365
+    ],
+    "center_error_body_y_m": -0.001549153136650716,
+    "heading_error_rad": 0.004520175145870317,
+    "observed_bank_gap_m": 0.6801472623159018,
+    "sensing_mode": "CURRENT_TWO_BANKS"
+  },
+  "row_clearance": {
+    "valid": true,
+    "escape_required": false,
+    "lateral_first": false,
+    "reason": "CENTER_3D_CLEAR",
+    "offset_from_row_center_m": 0.0,
+    "yaw_offset_rad": 0.0,
+    "error_body_y_m": -0.001549153136650716,
+    "error_heading_rad": 0.004520175145870317,
+    "tracking_margin_m": 0.05,
+    "final_goal": false
+  },
+  "command": {
+    "vx": 0.07423230977297961,
+    "vy": -0.0021688143913110025,
+    "omega": 0.004068157631283285,
+    "stop": false
+  },
+  "t": 1497.4083,
+  "posture": {
+    "roll_rad": 0.006652522994340342,
+    "pitch_rad": 0.007535140089159489,
+    "height_m": 0.2922445237636566
+  },
+  "position": [
+    -3.1802046298980713,
+    -0.8250806331634521,
+    0.2922445237636566
+  ],
+  "yaw": -0.004453862704650282,
+  "state": "FIXED_CLOSE_START",
+  "phase": "CLOSE_START",
+  "guard": "CLEAR",
+  "rear_or_front_ground_points": 706,
+  "turn_check": {
+    "safe": true,
+    "reason": "NOT_A_TURN_STAGE"
+  },
+  "navigation": {
+    "valid": true,
+    "reason": "ONLINE_SLAM_READY",
+    "source": "ONLINE_SLAM",
+    "map_updates": 38621,
+    "fusion": {
+      "stamp": 1497.008300781,
+      "ref_id": 1253,
+      "loop_closure_id": 3,
+      "proximity_detection_id": 3,
+      "graphs": 890,
+      "global_loop_events": 1,
+      "proximity_events": 1220,
+      "visual_words": 684,
+      "dictionary_words": 535441,
+      "wall": 34171.89
+    },
+    "odom_age_s": 0.19995117231246695,
+    "graph_age_s": 0.40002441431261104,
+    "visual_quality": "CURRENT",
+    "initial_alignment": {
+      "method": "STATIONARY_SLAM_AT_SURVEYED_START",
+      "stamp": 7.408333302,
+      "heading_rad": 0.0,
+      "task_from_map": [
+        -2.9999993742437496,
+        -0.8250001199421314,
+        -0.0007339129988612747
+      ],
+      "task_from_odom": [
+        -2.9999993742437496,
+        -0.8250001199421314,
+        -0.0007339129988612747
+      ],
+      "agreement_deg": null,
+      "frozen": true
+    },
+    "position": [
+      -3.185288983929475,
+      -0.8229682317758571,
+      0.0
+    ],
+    "yaw": 0.012813490434158581,
+    "map_revision": 0,
+    "map_rebase": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "map_revision_review": null,
+    "correction_source": "RTABMAP_MAP_TO_ODOM_TF",
+    "age_compensation": {
+      "applied": true,
+      "horizon_s": 0.19995117231246695,
+      "source": "PAST_MEASURED_ODOMETRY",
+      "fit_span_s": 0.40002441399997224,
+      "samples": 3,
+      "translation_m": [
+        0.013969342131520764,
+        1.8067380943725188e-05
+      ],
+      "speed_mps": 0.06986382552183724
+    },
+    "uncompensated_position": [
+      -3.199258326060996,
+      -0.8229862991568008,
+      0.0
+    ],
+    "estimated_position_stamp": 1497.4083251953125,
+    "tf_correction": {
+      "received": 113087,
+      "accepted": 38053,
+      "last_stamp": 1496.808374023,
+      "source": "RTABMAP_MAP_TO_ODOM_TF"
+    },
+    "tf_publishers": [
+      {
+        "namespace": "/",
+        "node": "as2_sim_sensor_source"
+      },
+      {
+        "namespace": "/",
+        "node": "imu_filter_madgwick"
+      },
+      {
+        "namespace": "/",
+        "node": "icp_odometry"
+      },
+      {
+        "namespace": "/as2/slam",
+        "node": "rtabmap"
+      }
+    ],
+    "route_grid_check": {
+      "position": [
+        -3.185288983929475,
+        -0.8229682317758571
+      ],
+      "target": [
+        -3.0,
+        -0.825
+      ],
+      "samples": [
+        {
+          "distance_m": 0.0,
+          "cell": [
+            417,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.020588902574719303,
+          "cell": [
+            417,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.041177805149438605,
+          "cell": [
+            417,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.061766707724157904,
+          "cell": [
+            418,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.08235561029887721,
+          "cell": [
+            418,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.1029445128735965,
+          "cell": [
+            419,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.12353341544831581,
+          "cell": [
+            419,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.1441223180230351,
+          "cell": [
+            420,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.16471122059775442,
+          "cell": [
+            420,
+            35
+          ],
+          "value": 0
+        },
+        {
+          "distance_m": 0.1853001231724737,
+          "cell": [
+            420,
+            35
+          ],
+          "value": 0
+        }
+      ],
+      "supported_gaps": [],
+      "local_ground_observed": true,
+      "grid": {
+        "width": 960,
+        "height": 164,
+        "resolution_m": 0.05000000074505806,
+        "cells": 157440,
+        "data_length": 157440,
+        "array_bytes": 314880,
+        "budget_bytes": 8388608
+      }
+    },
+    "end_anchor": {
+      "applied": false
+    },
+    "control_position": [
+      -3.154729531499707,
+      -0.8234508468633492,
+      0.0
+    ],
+    "control_yaw": -0.004520175145870109,
+    "row_control_fusion": {
+      "applied": true,
+      "reason": "CURRENT_PAIRED_BANK_CONTROL_FUSION",
+      "lateral_correction_m": 0.0008469406925208922,
+      "heading_correction_rad": 0.0032279464537872116,
+      "measured_y_m": -0.8234508468633492,
+      "source": "CURRENT_BANKS",
+      "ready": true,
+      "propagation_clock": {
+        "stationary_credit_s": 1.4999999999904503,
+        "current_interval_credited": false,
+        "stationary_credit_blocked": false
+      }
+    },
+    "home_approach_longitudinal_source": "ONLINE_SLAM_NAVIGATION"
+  },
+  "odometry": {
+    "valid": true,
+    "covariance": [
+      6.675535952264909e-05,
+      6.675535952264909e-05,
+      6.6755359522649085e-06
+    ],
+    "stamp": 1497.208374023,
+    "position": [
+      -0.04157764092087746,
+      -0.16895702481269836,
+      0.0
+    ],
+    "yaw": 0.001422970338055994,
+    "received_wall": 34172.125
+  },
+  "odometry_reference_error_m": 0.21838546169298428,
+  "navigation_position": [
+    -3.185288983929475,
+    -0.8229682317758571,
+    0.0
+  ],
+  "slam_vs_reference_error_m": 0.005505714807267623,
+  "planner": {
+    "valid": true,
+    "reason": "SERPENTINE_AISLES_2_TO_5_BOTTOM_RETURN_NO_ASTAR",
+    "current_aisle": 2,
+    "path_points": 2
+  },
+  "navigation_loop_events": 1,
+  "row_recovery": {
+    "safe": true,
+    "reason": "FULL_MAP_3D_SWEEP_CLEAR",
+    "tracking_margin_m": 0.05,
+    "hard_core_margin_m": 0.01,
+    "envelope": "54_SHAPES_7200_GAIT_POSES_3D",
+    "translation_body_m": [
+      0.044539385863787764,
+      -0.0013012886347866014
+    ],
+    "angle_rad": 0.002440894578769971,
+    "ground_points": 1485,
+    "quadrants": 4,
+    "obstacle_points": 0,
+    "physical_envelope_points": 0,
+    "leaf_deep_points": 0,
+    "foliage_points": 0,
+    "leaf_contact_allowance_m": 0.02,
+    "steps": 26,
+    "initial_margin_points": 0,
+    "final_margin_points": 0,
+    "clearance_escape": false
+  },
+  "row_preview": {},
+  "route_aisle": 2,
+  "performance": {
+    "profile": "full_density_720x33",
+    "cruise_speed_mps": 0.12,
+    "wall_elapsed_s": 5729.243749800004,
+    "real_time_factor": 0.26137975596425544,
+    "rays_per_scan": 23760,
+    "physics_hz": 240,
+    "rgb_hz": 5,
+    "lidar_hz": 5
+  }
+}

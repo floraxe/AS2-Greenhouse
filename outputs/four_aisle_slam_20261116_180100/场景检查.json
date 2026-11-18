@@ -1,0 +1,458 @@
+{
+  "runtime_performance": {
+    "profile": "full_density_720x33",
+    "cruise_speed_mps": 0.12,
+    "wall_elapsed_s": 5912.8807787000005,
+    "real_time_factor": 0.26330791901652895,
+    "rays_per_scan": 23760,
+    "physics_hz": 240,
+    "rgb_hz": 5,
+    "lidar_hz": 5
+  },
+  "forbidden_contact": null,
+  "visual_foliage": {
+    "source": "ACTUAL_RGB_GREEN_PROJECTION_AND_MEASURED_LIDAR_MEMORY",
+    "directly_colored_points": 687,
+    "foliage_points": 50398,
+    "points": 135036,
+    "memory_frames": 101
+  },
+  "sensor_checks": {
+    "rgb_nonempty": true,
+    "rgb_not_flat": true,
+    "lidar_nonempty": true,
+    "imu_finite": true,
+    "timestamps_monotonic": true,
+    "imu_fresh": true
+  },
+  "lidar_camera_projection": {
+    "projected_points": 3355,
+    "finite_depth_samples": 3344,
+    "median_depth_residual_m": 0.0035705666052228135,
+    "note": "ideal rendered depth is diagnostic only, not RGB sensor output or control input; edge/occlusion samples included"
+  },
+  "terrain": {
+    "profile": "flat",
+    "source": "UNCHANGED_FLAT_GROUND_BASELINE"
+  },
+  "scope": "RGB/lidar online mapping + fixed-route estimated-pose control; global loop geometry requires independent database review",
+  "sensor_streams": {
+    "imu": {
+      "frames": 372936,
+      "rate_hz": 240.94117647058823,
+      "monotonic": true
+    },
+    "lidar": {
+      "frames": 7770,
+      "rate_hz": 5.0000000000045475,
+      "monotonic": true
+    },
+    "rgb": {
+      "frames": 7770,
+      "rate_hz": 5.0000000000045475,
+      "monotonic": true
+    }
+  },
+  "camera": {
+    "width": 640,
+    "height": 360,
+    "fx": 320.0,
+    "fy": 320.0,
+    "cx": 320.0,
+    "cy": 180.0,
+    "model": "ideal pinhole",
+    "not_calibrated_to_hardware": true
+  },
+  "lidar_model": "generic 360deg snapshot collision raycast, 23760 rays/scan; NOT calibrated L2, no per-point scan time",
+  "imu_model": "native PhysX IMU specific force, no added bias/noise",
+  "static_acceleration_norm_mps2": null,
+  "static_angular_speed_rps": null,
+  "turn_median_gyro_z": null,
+  "simulation_time_s": 1556.9083334429763,
+  "completed": true,
+  "fault": null,
+  "attention_reason": null,
+  "travel_m": 188.98340699361478,
+  "milestones": {
+    "local_row_tracking_used": 33.30833344459484,
+    "primary_localization_row_fallback_used": 218.60833344447866,
+    "aisle2_out_time": 221.60833344447593,
+    "aisle_2_endpoint_time": 221.60833344447593,
+    "link_2_3_turn_across_time": 228.80833344446938,
+    "link_2_3_transfer_time": 243.60833344445592,
+    "link_2_3_turn_along_time": 250.80833344444937,
+    "aisle3_in_time": 582.3083334451071,
+    "aisle_3_endpoint_time": 582.3083334451071,
+    "link_3_4_turn_across_time": 589.6083334452001,
+    "link_3_4_transfer_time": 609.8083334454573,
+    "link_3_4_turn_along_time": 617.7083334455579,
+    "micro_heading_recovery_used": 623.4083334456304,
+    "aisle4_out_time": 987.5083334502665,
+    "aisle_4_endpoint_time": 987.5083334502665,
+    "link_4_5_turn_across_time": 994.8083334503594,
+    "link_4_5_transfer_time": 1011.8083334505759,
+    "link_4_5_turn_along_time": 1019.908333450679,
+    "aisle5_in_time": 1353.9083334459303,
+    "aisle_5_endpoint_time": 1353.9083334459303,
+    "home_link_turn_across_time": 1361.5083334458197,
+    "home_link_transfer_time": 1398.0083334452886,
+    "home_link_turn_along_time": 1405.5083334451795,
+    "close_start_time": 1556.8083334429778,
+    "same_heading_home_time": 1556.8083334429778
+  },
+  "minimum_x": -21.39536476135254,
+  "maximum_x": 21.30632972717285,
+  "passed": false,
+  "limitations": [
+    "SLAM estimated pose drives route; simulator truth only for diagnostic and independent safety checks",
+    "measured local lidar floor plane; flat-ground assumption",
+    "flat-ground baseline",
+    "ROS sensor publishing enabled",
+    "camera ideal test intrinsics, not AS2 calibrated",
+    "generic ray lidar snapshot not L2 scan simulation",
+    "pipeline placement and length provisional",
+    "same-aisle end confirmed from SLAM estimate + point support",
+    "person fixture is collision geometry; no semantic human recognition"
+  ],
+  "navigation_source": "SLAM",
+  "slam_control": {
+    "valid_pose_samples": 15131,
+    "waiting_samples": 115,
+    "max_reference_comparison_error_m": 0.09795266059938992,
+    "known_start_alignment_only": true,
+    "truth_pose_not_used_as_route_feedback": true,
+    "independent_truth_boundary_and_posture_supervision": true
+  },
+  "online_planning": {
+    "algorithm": "Fixed surveyed centerlines + heading/cross-track feedback; NO A*",
+    "prior": "aisles [2, 3, 4, 5]; excluded [1, 6]; bottom headland return to aisle2; known start",
+    "dynamic_obstacle_test": false,
+    "visual_odometry": false,
+    "visual_words_max": 860,
+    "grid_revisions": 1287,
+    "global_loop_events": 1,
+    "proximity_events": 1247,
+    "same_heading_return": true,
+    "global_loops_after_travel_and_return": 1,
+    "loop_event_evidence": [
+      {
+        "t": 1552.7083,
+        "ref_id": 1285,
+        "candidate_id": 3,
+        "state": "FIXED_CLOSE_START",
+        "candidate_age_s": 1518.8,
+        "travel_since_candidate_m": 188.77859344762908,
+        "accepted": true
+      }
+    ],
+    "loop_policy": "Before DONE, moving, candidate seen >=30s and >=5m of diagnostic travel earlier; geometry still needs graph verification"
+  },
+  "navigation_and_mapping_completed": true,
+  "visual_global_loop_verified": true,
+  "route23": {
+    "aisles_from_right": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "excluded_aisles": [
+      1,
+      6
+    ],
+    "return": "bottom headland from aisle5 to aisle2",
+    "astar_used": false,
+    "swap_only_in_headlands": true,
+    "scope": "live estimated-pose route tracking; pending graph and error audit",
+    "max_corridor_lateral_error_m": 0.0384757518768315
+  },
+  "crop_x_extent_m": [
+    -20.45,
+    20.45
+  ],
+  "corridor_samples": 13324,
+  "per_aisle_max_m": {
+    "2": 0.03469465970993024,
+    "3": 0.012775713205337658,
+    "4": 0.0384757518768315,
+    "5": 0.01936602592468173
+  },
+  "max_corridor_lateral_error_m": 0.0384757518768315,
+  "max_bay_lateral_offset_m": 3.7470426082611086,
+  "global_loop_geometry_verified": false,
+  "full_slam_acceptance_pending_database_review": true,
+  "route_tracking_and_mapping_passed": true,
+  "full_map": {
+    "coverage": {
+      "per_aisle": {
+        "2": {
+          "covered_bins": 409,
+          "total_bins": 409,
+          "fraction": 1.0
+        },
+        "3": {
+          "covered_bins": 409,
+          "total_bins": 409,
+          "fraction": 1.0
+        },
+        "4": {
+          "covered_bins": 409,
+          "total_bins": 409,
+          "fraction": 1.0
+        },
+        "5": {
+          "covered_bins": 409,
+          "total_bins": 409,
+          "fraction": 1.0
+        }
+      },
+      "forbidden_aisle_1_samples": 0,
+      "excluded_aisle_samples": 0,
+      "all_selected_aisles_covered": true
+    },
+    "stages": [
+      [
+        "AISLE2_OUT",
+        [
+          21.25,
+          -0.8250000000000002
+        ],
+        0.0
+      ],
+      [
+        "LINK_2_3_TURN_ACROSS",
+        [
+          21.25,
+          -0.8250000000000002
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_2_3_TRANSFER",
+        [
+          21.25,
+          0.40000000000000013
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_2_3_TURN_ALONG",
+        [
+          21.25,
+          0.40000000000000013
+        ],
+        3.141592653589793
+      ],
+      [
+        "AISLE3_IN",
+        [
+          -21.25,
+          0.40000000000000013
+        ],
+        3.141592653589793
+      ],
+      [
+        "LINK_3_4_TURN_ACROSS",
+        [
+          -21.25,
+          0.40000000000000013
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_3_4_TRANSFER",
+        [
+          -21.25,
+          1.6250000000000004
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_3_4_TURN_ALONG",
+        [
+          -21.25,
+          1.6250000000000004
+        ],
+        0.0
+      ],
+      [
+        "AISLE4_OUT",
+        [
+          21.25,
+          1.6250000000000004
+        ],
+        0.0
+      ],
+      [
+        "LINK_4_5_TURN_ACROSS",
+        [
+          21.25,
+          1.6250000000000004
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_4_5_TRANSFER",
+        [
+          21.25,
+          2.875000000000001
+        ],
+        1.5707963267948966
+      ],
+      [
+        "LINK_4_5_TURN_ALONG",
+        [
+          21.25,
+          2.875000000000001
+        ],
+        3.141592653589793
+      ],
+      [
+        "AISLE5_IN",
+        [
+          -21.25,
+          2.875000000000001
+        ],
+        3.141592653589793
+      ],
+      [
+        "HOME_LINK_TURN_ACROSS",
+        [
+          -21.25,
+          2.875000000000001
+        ],
+        -1.5707963267948966
+      ],
+      [
+        "HOME_LINK_TRANSFER",
+        [
+          -21.25,
+          -0.8250000000000002
+        ],
+        -1.5707963267948966
+      ],
+      [
+        "HOME_LINK_TURN_ALONG",
+        [
+          -21.25,
+          -0.8250000000000002
+        ],
+        0.0
+      ],
+      [
+        "CLOSE_START",
+        [
+          -3.0,
+          -0.825
+        ],
+        0.0
+      ]
+    ],
+    "config": {
+      "selected_aisles_from_right": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "excluded_aisles_from_right": [
+        1,
+        6
+      ],
+      "start_xy_m": [
+        -3.0,
+        -0.825
+      ],
+      "headland_x_m": {
+        "far": 21.25,
+        "entry": -21.25
+      },
+      "crop_x_extent_m": [
+        -20.45,
+        20.45
+      ],
+      "aisles": [
+        {
+          "id": 1,
+          "center_y_m": -1.9,
+          "width_m": 0.3,
+          "selected": false
+        },
+        {
+          "id": 2,
+          "center_y_m": -0.8250000000000002,
+          "width_m": 0.6499999999999999,
+          "selected": true
+        },
+        {
+          "id": 3,
+          "center_y_m": 0.40000000000000013,
+          "width_m": 0.6000000000000005,
+          "selected": true
+        },
+        {
+          "id": 4,
+          "center_y_m": 1.6250000000000004,
+          "width_m": 0.5500000000000003,
+          "selected": true
+        },
+        {
+          "id": 5,
+          "center_y_m": 2.875000000000001,
+          "width_m": 0.6499999999999999,
+          "selected": true
+        },
+        {
+          "id": 6,
+          "center_y_m": 4.4,
+          "width_m": 0.8,
+          "selected": false,
+          "observation": "SLAM centerline and raw lidar sweep; no paired-bank requirement"
+        }
+      ],
+      "presentation_inner_width_m": 6.85,
+      "outer_margins_m": {
+        "right": 0.3,
+        "left": 0.8
+      },
+      "crop_section_length_each_side_m": 20.0,
+      "source": "User-measured bed widths, internal aisles, two 20m crop sections and 90cm bed-only pipe band. Overall width relaxed for presentation; compact margins are 0.30m right and 0.80m left.",
+      "survey_revision": "2026-11-01 long greenhouse with compact outer margins",
+      "pipe_zones_xy_m": [
+        [
+          -0.45,
+          0.45,
+          3.2000000000000006,
+          4.000000000000001
+        ],
+        [
+          -0.45,
+          0.45,
+          1.9000000000000006,
+          2.5500000000000007
+        ],
+        [
+          -0.45,
+          0.45,
+          0.7000000000000004,
+          1.3500000000000003
+        ],
+        [
+          -0.45,
+          0.45,
+          -0.5000000000000002,
+          0.09999999999999981
+        ],
+        [
+          -0.45,
+          0.45,
+          -1.7500000000000002,
+          -1.1500000000000001
+        ]
+      ],
+      "pipe_zones_cross_longitudinal_aisles": false
+    },
+    "completed": true,
+    "pending_database_audit": true
+  }
+}

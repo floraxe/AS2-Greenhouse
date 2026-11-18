@@ -1,0 +1,9 @@
+<CycloneDDS xmlns="https://cdds.io/config">
+  <Domain Id="any">
+    <General>
+      <Interfaces><NetworkInterface name="ens37"/></Interfaces>
+      <MaxMessageSize>65500B</MaxMessageSize>
+      <FragmentSize>64000B</FragmentSize>
+    </General>
+  </Domain>
+</CycloneDDS>

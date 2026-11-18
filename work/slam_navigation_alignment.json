@@ -1,0 +1,15 @@
+{
+  "map_anchor_xyyaw": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "task_anchor_xyyaw": [
+    -3.0,
+    -2.15,
+    0.0
+  ],
+  "map_database": "greenhouse_structures.db",
+  "method": "Known initial map origin at the configured greenhouse start, heading +X. Approximate fixed initial alignment, not fitted continuously to simulator truth.",
+  "limitation": "Changing the map origin, aisle or initial heading requires a new explicit alignment. Independent global relocalization is not implemented."
+}
